@@ -27,7 +27,7 @@ result_name = args.output
 
 data_ori = pd.read_csv(filepath_or_buffer=args.file,delimiter='\t')
 if args.select_number:
-    selected_data = [x-1 for x in args.select]    
+    selected_data = [x-1 for x in args.select_number]    
     data = data_ori.iloc[selected_data,:]
 elif args.select_name:
     indi = []
